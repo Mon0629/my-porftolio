@@ -1,0 +1,72 @@
+@font-face {
+  font-family: Inter;
+  src: url("assets/fonts/Inter.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Poppins-Light;
+  src: url("assets/fonts/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Poppins-Italic;
+  src: url("assets/fonts/Poppins-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Inter-Bold;
+  src: url("assets/fonts/Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: bold;
+}
+
+
+@import "tailwindcss";
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #f9f6ee;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9f6ee;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+@theme {
+  --font-poppins-regular: Poppins-Regular, sans-serif;
+  --font-poppins-light: Poppins-Light, sans-serif;
+  --font-inter: Inter, sans-serif;
+  --font-poppins-italic: Poppins-Italic, sans-serif;
+  --font-inter-bold: Inter-Bold, sans-serif;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
