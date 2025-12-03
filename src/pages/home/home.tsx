@@ -12,14 +12,14 @@ export default function Home() {
       <div className="flex flex-col w-full overflow-y-scroll scrollbar-hide h-screen">
         <section className="p-4 min-h-screen flex flex-col md:flex-row gap-4">
         {/* Left Column */}
-        <div className="md:flex-2 flex flex-col gap-4 md:w-2/3">
+        <div className="md:flex-2 flex flex-col gap-4 md:w-2/3 ">
             {/* Top Row (larger) */}
-            <div className="flex-3 p-4 flex flex-col justify-end mb-4">
+            <div className="flex-3 p-4 flex flex-col justify-end mb-4 bg-amber-500">
                 <h1 className="text-6xl font-bold mb-4 font-poppins-italic">Software</h1>
                 <h1 className="text-9xl font-bold mb-4 font-inter-bold">Engineer</h1>
             </div>
             {/* Bottom Row (smaller) */}
-            <div className="flex-1 p-4">
+            <div className="flex-1 p-4 ">
                 <p className="text-gray-700 font-poppins-regular">
                     palomares.raymond.rivamonte@gmail.com
                 </p>
@@ -50,6 +50,19 @@ export default function Home() {
         <div className="md:flex-1 p-4 md:w-1/3 mt-8">
             <div className="bg-white h-full w-full"></div>
         </div>
+        </section>
+
+        <section className="p-4 min-h-screen flex gap-4">
+          {/* Left column | small */}
+          <div className="w-1/3 bg-gray-500 flex flex-col">
+          </div>
+          {/* Right column | large */}
+          <div className="w-2/3 bg-red-500 flex flex-col">
+            <div className="flex-4 bg-red-500 border-b-4 border-white">
+              <p>jusko</p>
+            </div>
+            <div className="flex-1 bg-green-500"></div>
+          </div>
         </section>
 
         <section className="min-h-screen flex items-center justify-center">
